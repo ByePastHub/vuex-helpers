@@ -1,0 +1,46 @@
+{
+  "name": "vuex-helpers",
+  "version": "0.1.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "commit": "npx cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ByePastHub/vuex-helpers.git"
+  },
+  "keywords": [
+    "vuex-helpers",
+    "vue",
+    "vue-router"
+  ],
+  "files": [
+    "dist",
+    "src"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git",
+      "czConfig": "cz.config.js"
+    }
+  },
+  "author": "ByePast",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@vue/compiler-sfc": "^3.3.4",
+    "commitizen": "^4.3.0",
+    "cz-git": "^1.7.1",
+    "husky": "7",
+    "rollup": "^3.28.0",
+    "tslib": "^2.6.1",
+    "typescript": "^5.1.6",
+    "vue": "^3.3.4",
+    "vuex": "^4.1.0"
+  }
+}
