@@ -1,6 +1,6 @@
 {
   "name": "@bye_past/vuex-helpers",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "vuex-helpers is a utility library for Vue 3 and Vuex 4, simplifying the use of Vuex's mapper functions. This library provides a set of hooks for Vuex, making it more concise to use Vuex in Vue components.",
   "type": "module",
   "main": "dist/index.js",
