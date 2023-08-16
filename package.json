@@ -1,7 +1,7 @@
 {
-  "name": "vuex-helpers",
+  "name": "@bye_past/vuex-helpers",
   "version": "0.1.0",
-  "description": "",
+  "description": "vuex-helpers is a utility library for Vue 3 and Vuex 4, simplifying the use of Vuex's mapper functions. This library provides a set of hooks for Vuex, making it more concise to use Vuex in Vue components.",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -26,7 +26,7 @@
   "config": {
     "commitizen": {
       "path": "node_modules/cz-git",
-      "czConfig": "cz.config.js"
+      "czConfig": "cz.config.mjs"
     }
   },
   "author": "ByePast",

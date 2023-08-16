@@ -1,5 +1,5 @@
 // .commitlintrc.js
-const { execSync } = require('child_process')
+import execSync from 'child_process'
 
 let changeFiles = execSync('git status --porcelain || true').toString().split('\n')
 const gitAddFiles = []
