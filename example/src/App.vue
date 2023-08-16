@@ -1,25 +1,26 @@
 <script setup lang="ts">
-import type { UserInfo } from '@/store/modules/user'
-import { useState, useGetters, useMutations, useActions } from 'vuex-helpers';
+import { useState, useGetters, useMutations, useActions } from '@bye_past/vuex-helpers';
 
-const { platform } = useState(['platform']);
-const { userInfo } = useState('user', ['userInfo']) as unknown as { userInfo: UserInfo};
+// useState、useGetters 返回值都是响应式数据
+const { platform } = useState(['platform']); // 没有命名空间模块
+const { userInfo, loading } = useState('user', ['userInfo', 'loading']); // user命名空间模块
 const { getUserId } = useGetters('user', ['getUserId']);
 const { setUserInfo } = useMutations('user', ['setUserInfo']);
 const { getUserInfo } = useActions('user', ['getUserInfo']);
 
 setUserInfo({ name: '获取中...', userId: '' })
 getUserInfo()
-setTimeout(() => {
-  console.log('platform', platform.value)
-  console.log('userInfo', userInfo)
-  console.log('getUserId', getUserId.value)
-}, 2100)
 
 console.log('platform', platform.value)
-console.log('userInfo', userInfo)
+console.log('userInfo: ', userInfo, 'loading: ',loading.value)
 console.log('getUserId', getUserId.value)
 console.log('-----------------')
+
+setTimeout(() => {
+  console.log('platform', platform.value)
+  console.log('userInfo: ', userInfo, 'loading: ',loading.value)
+  console.log('getUserId', getUserId.value)
+}, 2100)
 </script>
 
 <template>
